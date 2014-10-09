@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.homepage         = "http://github.com/Dids/DDVersion"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Pauli 'Dids' Jokela" => "pauli.jokela@didstopia.com" }
-  s.source           = { :git => "https://github.com/Dids/DDVersion.git", :tag => "1.0.0" }
-  
-  s.platform     = :ios, '5.0'
-  s.requires_arc = true
 
-  s.source_files  = 'DDVersion/*.{h,m}'
+  s.source           = { :git => "https://github.com/Dids/DDVersion.git", :tag => "1.0.0" }
+  s.source_files     = 'DDVersion/*.{h,m}'
+  
+  s.platform         = :ios, '5.0'
+  s.requires_arc     = true
 end
