@@ -7,7 +7,7 @@ While DDVersion was inspired by [sebyddd](https://github.com/sebyddd)'s [SDiPhon
 
 This library supports all iOS devices, both new and old.
 
-DDCarrier is part of the DD-projects (check them out, they're cool!):
+DDVersion is part of the DD-projects (check them out, they're cool!):
 
 - DDDevice - Combines all DD-project in to one neat library (Coming Soon)
 - [DDVersion](https://github.com/Dids/DDVersion.git) - Easily get the device name and type
