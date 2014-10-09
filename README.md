@@ -1,11 +1,20 @@
 DDVersion
 =============
 
-DDVersion is a simple, univeral Objective-C library for quickly getting an iOS device type or name.
+DDVersion is a simple, universal Objective-C iOS library for quickly getting the mobile device type and name.
 
 While DDVersion was inspired by [sebyddd](https://github.com/sebyddd)'s [SDiPhoneVersion](https://github.com/sebyddd/SDiPhoneVersion), it doesn't include support for device size or device enumeration. Not yet at least.
 
-Currently this library supports all iOS devices, both new and old.
+This library supports all iOS devices, both new and old.
+
+DDCarrier is part of the DD-projects (check them out, they're cool!):
+
+DDDevice - Combines all DD-project in to one neat library (Coming Soon)
+[DDVersion](https://github.com/Dids/DDVersion.git) - Easily get the device name and type
+[DDCarrier](https://github.com/Dids/DDCarrier.git) - Easily get the current carrier name
+DDSize - Easily find out the device resolution (Coming Soon)
+
+More DD-projects are under development and will be added once completed.
 
 ## Usage
 ```objective-c
