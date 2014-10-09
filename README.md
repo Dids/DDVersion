@@ -33,7 +33,7 @@ it, simply add the following line to your Podfile:
 
 ## Manual Installation
 
-Simply copy DDVersion.h and DDVersion.m to your project and import DDversion.h like so:
+Simply copy `DDVersion.h` and `DDVersion.m` to your project and import DDversion.h like so:
 ```objective-c
 	#import "DDVersion.h"
 ```
@@ -44,7 +44,7 @@ Using the CocoaPod installation method is recommended over the manual installati
 
 Pauli 'Dids' Jokela, pauli.jokela@didstopia.com and Didstopia, http://didstopia.com
 
-Some of the original code (and major inspiration!) comes from [sebyddd](https://github.com/sebyddd)'s [SDiPhoneVersion](https://github.com/sebyddd/SDiPhoneVersion)
+Some of the original code (and major inspiration!) comes from [sebyddd](https://github.com/sebyddd)'s [SDiPhoneVersion](https://github.com/sebyddd/SDiPhoneVersion).
 
 ## License
 
