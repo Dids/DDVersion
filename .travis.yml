@@ -2,4 +2,6 @@ language: objective-c
 xcode_project: DDVersionDemo.xcodeproj
 xcode_scheme: DDVersionTests
 xcode_sdk: iphonesimulator
-
+notifications:
+  slack:
+    secure: JQompY3flRRZ6YM0zisCdn3J60tJKJKAnhWZvXlGvlxzkImvRh7iQfu8EA3m2XlHm8Z54ST9V1e6amwJmtFbLgYxEjLJ/iDdML2xsEdCErz0mtBPJnMYLPsl2totRo5oErPSl9td/vZ0MYWlWFn0WmZ9duKNf8sVX9uxpgYrXEw=
