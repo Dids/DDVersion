@@ -1,3 +1,5 @@
 language: objective-c
 xcode_project: DDVersionDemo.xcodeproj
 xcode_scheme: DDVersionTests
+xcode_sdk: iphonesimulator
+
