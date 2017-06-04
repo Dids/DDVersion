@@ -5,13 +5,9 @@ language: objective-c
 sudo: false
 
 env:
-  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.3'"
+  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3'"
   - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination 'platform=iOS Simulator,name=iPhone SE,OS=9.3'"
-  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination 'platform=iOS Simulator,name=iPhone SE,OS=8.4'"
+  - XCODE_BUILD_COMMAND="xcodebuild clean test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination 'platform=iOS Simulator,name=iPhone 5s,OS=8.4'"
 
 script:
   - eval $XCODE_BUILD_COMMAND
-
-notifications:
-  slack:
-    secure: JQompY3flRRZ6YM0zisCdn3J60tJKJKAnhWZvXlGvlxzkImvRh7iQfu8EA3m2XlHm8Z54ST9V1e6amwJmtFbLgYxEjLJ/iDdML2xsEdCErz0mtBPJnMYLPsl2totRo5oErPSl9td/vZ0MYWlWFn0WmZ9duKNf8sVX9uxpgYrXEw=
