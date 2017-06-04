@@ -5,15 +5,15 @@ language: objective-c
 sudo: false
 
 env:
-  - IOS_VERSION=10.3
-  - IOS_VERSION=9.3
-  - IOS_VERSION=8.4
+  - IOS_VERSION=10.3 IOS_INSTALL_NAME='iOS 10.3'
+  - IOS_VERSION=9.3 IOS_INSTALL_NAME='iOS 9.3'
+  - IOS_VERSION=8.4 IOS_INSTALL_NAME='iOS 8.4'
 
 install:
   - gem install xcode-install
 
 script:
-  - xcversion simulators --install='iOS ${IOS_VERSION}'
+  - xcversion simulators --install=${IOS_INSTALL_NAME}
   - xcodebuild clean build -sdk iphonesimulator${IOS_VERSION} -project DDVersionDemo.xcodeproj -scheme DDVersionTests CODE_SIGNING_REQUIRED=NO
 
 notifications:
