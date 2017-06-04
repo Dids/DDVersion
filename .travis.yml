@@ -5,12 +5,16 @@ language: objective-c
 sudo: false
 
 env:
-  - XCODE_SDK=iphonesimulator10.3
-  - XCODE_SDK=iphonesimulator9.3
-  - XCODE_SDK=iphonesimulator8.4
+  - IOS_VERSION=10.3
+  - IOS_VERSION=9.3
+  - IOS_VERSION=8.4
+
+install:
+  - gem install xcode-install
 
 script:
-  - xcodebuild clean build -sdk $XCODE_SDK -project DDVersionDemo.xcodeproj -scheme DDVersionTests CODE_SIGNING_REQUIRED=NO
+  - xcversion simulators --install='iOS ${IOS_VERSION}'
+  - xcodebuild clean build -sdk iphonesimulator${IOS_VERSION} -project DDVersionDemo.xcodeproj -scheme DDVersionTests CODE_SIGNING_REQUIRED=NO
 
 notifications:
   slack:
