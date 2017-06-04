@@ -21,6 +21,7 @@
 {
     NSString *deviceName = [DDVersion deviceName];
     XCTAssert(deviceName != nil && deviceName.length > 0, @"Device name should return a string.");
+    XCTAssert(![deviceName isEqualToString:@"Unknown"], @"Device name should not be unknown.");
 }
 
 - (void)testDeviceType

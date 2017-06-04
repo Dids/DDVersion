@@ -10,7 +10,7 @@
 
 @interface DDVersion : NSObject
 
-+(NSString*)deviceType;
-+(NSString*)deviceName;
++ (NSString*)deviceType;
++ (NSString*)deviceName;
 
 @end
