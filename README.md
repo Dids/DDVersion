@@ -1,4 +1,4 @@
-# DDVersion [![Build Status](https://travis-ci.org/Dids/DDVersion.png?branch=master)](https://travis-ci.org/Dids/DDVersion)
+# DDVersion [![Build Status](https://travis-ci.org/Dids/DDVersion.svg?branch=master)](https://travis-ci.org/Dids/DDVersion)
 
 DDVersion is a simple, universal Objective-C iOS library for quickly getting the mobile device type and name.
 
