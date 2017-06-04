@@ -1,20 +1,17 @@
-osx_image: xcode8.3simfix
+osx_image: xcode8.3
 
 language: objective-c
 
 sudo: false
 
 env:
-  - IOS_VERSION=10.3 IOS_INSTALL_NAME='iOS 10.3'
-  - IOS_VERSION=9.3 IOS_INSTALL_NAME='iOS 9.3'
-  - IOS_VERSION=8.4 IOS_INSTALL_NAME='iOS 8.4'
-
-install:
-  - gem install xcode-install
+  - XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=10.3'
+  - XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=9.3'
+  - XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=8.4'
 
 script:
-  - xcversion simulators --install=${IOS_INSTALL_NAME}
-  - xcodebuild clean build -sdk iphonesimulator${IOS_VERSION} -project DDVersionDemo.xcodeproj -scheme DDVersionTests CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean build test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination $XCODE_DESTINATION
+  - xcodebuild clean build -sdk $IOS_VERSION -project DDVersionDemo.xcodeproj -scheme DDVersionTests CODE_SIGNING_REQUIRED=NO
 
 notifications:
   slack:
