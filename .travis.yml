@@ -5,12 +5,12 @@ language: objective-c
 sudo: false
 
 env:
-  - XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=10.3'
-  - XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=9.3'
-  - XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5s,OS=8.4'
+  - XCODE_DESTINATION="platform=iOS Simulator,name=iPhone 5s,OS=10.3"
+  - XCODE_DESTINATION="platform=iOS Simulator,name=iPhone 5s,OS=9.3"
+  - XCODE_DESTINATION="platform=iOS Simulator,name=iPhone 5s,OS=8.4"
 
 script:
-  - xcodebuild clean build test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination $XCODE_DESTINATION
+  - xcodebuild clean build test -project DDVersionDemo.xcodeproj -scheme DDVersionTests -destination ${XCODE_DESTINATION}
   - xcodebuild clean build -sdk $IOS_VERSION -project DDVersionDemo.xcodeproj -scheme DDVersionTests CODE_SIGNING_REQUIRED=NO
 
 notifications:
