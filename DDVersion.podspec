@@ -9,6 +9,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/Dids/DDVersion.git", :tag => "1.1.1" }
   s.source_files     = 'DDVersion/*.{h,m}'
   
+  s.resource_bundles = {
+    'DDVersion' => 'DDVersion/*.plist'
+  }
+  
   s.platform         = :ios, '8.4'
   s.requires_arc     = true
 end
