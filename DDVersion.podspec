@@ -10,8 +10,9 @@ Pod::Spec.new do |s|
   s.source_files     = 'DDVersion/*.{h,m}'
   
   s.resource_bundles = {
-    'DDVersion' => 'DDVersion/*.plist'
+    'DDVersion' => "DDVersion/*.plist"
   }
+  s.resources = "DDVersion/*.plist"
   
   s.platform         = :ios, '8.4'
   s.requires_arc     = true
