@@ -18,11 +18,11 @@ More DD-projects are under development and will be added once completed.
 
 ## Usage
 ```objective-c
-	// Get the device type as a string (eg. "iPhone6,1" or "i386")
-    [DDVersion deviceType];
+// Get the device type as a string (eg. "iPhone6,1" or "i386")
+[DDVersion deviceType];
 
-    // Get the device name as a string (eg. "iPhone 5S (GSM)" or "Simulator")	
-    [DDVersion deviceName];
+// Get the device name as a string (eg. "iPhone 5S (GSM)" or "Simulator")
+[DDVersion deviceName];
 ```
 
 ## Demo
@@ -37,14 +37,15 @@ DDVersion is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-    pod "DDVersion"
+pod "DDVersion"
 ```
 
 ## Manual Installation
 
-Simply copy `DDVersion.h` and `DDVersion.m` to your project and import DDversion.h like so:
+Simply copy `DDVersion.h` and `DDVersion.m` to your project and import `DDversion.h` like so:
+
 ```objective-c
-	#import "DDVersion.h"
+#import "DDVersion.h"
 ```
 
 Using the CocoaPod installation method is recommended over the manual installation, as this way your copy of DDVersion is always up to date.
