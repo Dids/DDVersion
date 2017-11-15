@@ -2,14 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AppleTV2,1</key>
+	<string>Apple TV</string>
+	<key>AppleTV3,1</key>
+	<string>Apple TV</string>
+	<key>AppleTV3,2</key>
+	<string>Apple TV</string>
+	<key>AppleTV5,3</key>
+	<string>Apple TV</string>
+	<key>AppleTV6,2</key>
+	<string>Apple TV 4K</string>
 	<key>iPhone1,1</key>
 	<string>iPhone</string>
 	<key>iPhone1,2</key>
 	<string>iPhone 3G</string>
+	<key>iPhone10,1</key>
+	<string>iPhone 8</string>
+	<key>iPhone10,2</key>
+	<string>iPhone 8 Plus</string>
+	<key>iPhone10,3</key>
+	<string>iPhone X</string>
+	<key>iPhone10,4</key>
+	<string>iPhone 8</string>
+	<key>iPhone10,5</key>
+	<string>iPhone 8 Plus</string>
+	<key>iPhone10,6</key>
+	<string>iPhone X</string>
 	<key>iPhone2,1</key>
 	<string>iPhone 3GS</string>
 	<key>iPhone3,1</key>
 	<string>iPhone 4 (GSM)</string>
+	<key>iPhone3,2</key>
+	<string>iPhone 4</string>
 	<key>iPhone3,3</key>
 	<string>iPhone 4 (CDMA)</string>
 	<key>iPhone4,1</key>
@@ -110,6 +134,14 @@
 	<string>iPad 9.7-Inch 5th Gen (Wi-Fi Only)</string>
 	<key>iPad6,12</key>
 	<string>iPad 9.7-Inch 5th Gen (Wi-Fi/Cellular)</string>
+	<key>iPad7,1</key>
+	<string>iPad Pro 12.9-inch</string>
+	<key>iPad7,2</key>
+	<string>iPad Pro 12.9-inch</string>
+	<key>iPad7,3</key>
+	<string>iPad Pro 10.5-inch</string>
+	<key>iPad7,4</key>
+	<string>iPad Pro 10.5-inch</string>
 	<key>iPod1,1</key>
 	<string>iPod touch</string>
 	<key>iPod2,1</key>
