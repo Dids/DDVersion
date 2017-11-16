@@ -21,7 +21,15 @@
 
 + (NSString*)deviceName
 {
+    // If compiled as static library
     NSString *deviceListFilePath = [[NSBundle mainBundle] pathForResource:@"DeviceList" ofType:@"plist"];
+    
+    // If compiled as a framework
+    if (!deviceListFilePath) {
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        deviceListFilePath = [bundle pathForResource:@"DeviceList" ofType:@"plist"];
+    }
+
     NSDictionary *deviceList = [NSDictionary dictionaryWithContentsOfFile:deviceListFilePath];
     
     NSString *result = [deviceList objectForKey:[DDVersion deviceType]];
